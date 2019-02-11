@@ -1,40 +1,146 @@
-.buttton {
-    display: inline-block;
-    border: 1px solid #fff;
-    border-radius: 31px;
-    font-size: 18px;
-    padding: 18px 35px 18px;
-    background: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+h3 span {
+  font-weight: 400;
 }
 
-.buttton--purple{
+.button {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 31px;
+  font-size: 18px;
+  padding: 18px 35px 18px;
+  background: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #fff;
+}
+
+.button--purple {
     border: 1px solid var(--purple);
-    background:var(--purple);
+    background: var(--purple);
+    padding: 18px 65px 18px;
 }
-
 
 .container {
     max-width: 1180px;
     margin: 0 auto;
 }
 
-.solution__container{
-    text-align: center; 
+
+/******* partner **********************************/
+.solution {
+  padding: 72px 0 96px;
 }
 
-.solution__title h3{
-    font-size: 40px;
-    line-height: 1.2;
+.solution__container {
+  text-align: center;
 }
 
-.solution__content{
+.solution__title h3 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.solution__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 105px;
+}
+
+.solution__item:hover {
+  background: #e8e8e8;
+  /* display: block; */
+}
+
+.solution__item {
+  margin: 0 39px 43px;
+  flex: 1 1 300px;
+}
+.solution__item h6 {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: var(--black);
+}
+.solution__icon,
+.solution__text {
+  padding: 10px;
+}
+.solution__icon i {
+  font-size: 50px;
+  color: var(--black);
+}
+
+.solution__button {
+  margin-top: 48px;
+}
+
+
+/******* partner **********************************/
+
+.partner__container {
+    max-width: none;
     display: flex;
-    flex-wrap: wrap;
 }
 
-.solution__item{
-    padding: 0 39px 43px;
-    flex:1 1 300px;
+.partner__content{
+    flex:1;
+    text-align: center;
+    color: white;
+   
+   
 }
+
+.partner__content h4{
+    min-height: 57px;
+    font-size: 31px;
+}
+
+.partner__text p{
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 28px 0 26px;
+}
+
+.partner__button a{
+    color: var(--black);
+}
+
+.partner__wrap{
+    padding: 114px 15px 113px;
+    max-width: 385px;
+    margin: 0 auto;
+}
+
+
+.partner1{
+    background:  linear-gradient(
+                    rgba(66, 66, 240, 0.3) 0,
+                    rgba(66, 66, 240, 0.3) 80%), 
+                url(../asset/integrify-36.jpg);
+    
+}
+
+.partner3{
+    background:  linear-gradient(
+                    rgba(212, 23, 23, 0.3) 0,
+                    rgba(212, 23, 23, 0.3) 80%), 
+                url(../asset/integrify-33.jpg);
+    
+}
+
+
+.partner__content{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.partner2{
+    background:  linear-gradient(
+                    rgba(24, 21, 21, 0.6) 0,
+                    rgba(24, 21, 21, 0.6) 80%), 
+                url(../asset/integrify\ in\ medium.jpg);
+    background-position: center top;
+    
+}
+
+
