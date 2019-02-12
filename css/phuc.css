@@ -47,7 +47,7 @@ h3 span {
 
 .solution__item {
   margin: 0 39px 43px;
-  flex: 1 1 300px;
+  flex: 1 1 200px;
 }
 .solution__item h6 {
   font-size: 25px;
@@ -72,10 +72,11 @@ h3 span {
 .partner__container {
   max-width: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .partner__content {
-  flex: 1;
+  flex: 1 1 330px;
   text-align: center;
   color: white;
 }
@@ -128,7 +129,7 @@ h3 span {
       rgba(24, 21, 21, 0.6) 0,
       rgba(24, 21, 21, 0.6) 80%
     ),
-    url(../asset/integrify\in\medium.jpg);
+    url(../asset/integrify\ in\ medium.jpg);
   background-position: center top;
 }
 
