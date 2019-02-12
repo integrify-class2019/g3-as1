@@ -1,0 +1,14 @@
+.footer-container {
+  background-color: red;
+
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.footer-subcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 60px);
+  max-width: 1180px;
+}

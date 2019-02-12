@@ -1,0 +1,40 @@
+.buttton {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 31px;
+    font-size: 18px;
+    padding: 18px 35px 18px;
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.buttton--purple{
+    border: 1px solid var(--purple);
+    background:var(--purple);
+}
+
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.solution__container{
+    text-align: center; 
+}
+
+.solution__title h3{
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.solution__content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solution__item{
+    padding: 0 39px 43px;
+    flex:1 1 300px;
+}
