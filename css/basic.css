@@ -22,6 +22,19 @@ body{
     background:white;
 }
 
+a{
+    text-decoration: none;
+}
+
+*:hover{
+    transition: all 1s ease;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'ProximaNovaSoft-Bold';
+}
 
 
  
