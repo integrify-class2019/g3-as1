@@ -144,3 +144,45 @@ h3 span {
 }
 
 
+
+/******* Learn **********************************/
+
+
+.learn__container{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 85px 20px 92px;
+}
+
+.learn__container > *{
+  flex :0 1 100%;
+}
+
+.learn__icon {
+  font-size: 69px;
+}
+
+.learn__title h3{
+  font-size: 40px;
+  line-height: 1.2;
+
+}
+
+.learn__title h3 {
+ font-weight: 300; 
+ padding:25px 0;
+}
+
+.learn__title h3 span{
+  font-weight: 700; 
+ }
+
+.learn__text p {
+ font-size: 20px;
+ color: #626262;
+ }
+
+.learn__button .button{
+  margin-top: 20px;
+}
