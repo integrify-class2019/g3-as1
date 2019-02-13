@@ -20,73 +20,63 @@
   <body>
     <!--*********** Adrien START ******************************-->
 
-    <header>
-      <div class="header_container">
-        <div class="header_logo">
-          <a href="./index.html">
-            <img src="./asset/integrify-logo.png" alt="Company-Logo" />
-          </a>
-        </div>
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <img src="./asset/integrify-logo.png" alt="Company-Logo" />
+      </a>
+      <input class="menu_btn" id="menu_btn" type="checkbox" />
+      <label class="menu_icon" for="menu_btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Customers</a>
+        </li>
+        <details>
+          <summary>
+            <a href="#">Industry Solutions</a>
+          </summary>
+          <ul class="submenu">
+            <li>
+              <a href="#">E-Commerce</a>
+            </li>
+            <li>
+              <a href="#">Travel</a>
+            </li>
+            <li>
+              <a href="#">Retail</a>
+            </li>
+            <li>
+              <a href="#">Agencies</a>
+            </li>
+            <li>
+              <a href="#">Gaming</a>
+            </li>
+            <li>
+              <a href="#">Other Industries</a>
+            </li>
+          </ul>
+        </details>
 
-        <nav class="header_navigation">
-          <div class="menu-toggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="menu">
-              <li class="menu_item">
-                <a href="#">Product</a>
-              </li>
-              <li class="menu_item">
-                <a href="#">Customers</a>
-              </li>
-              <li class="menu_item">
-                <details>
-                  <summary>
-                    <a href="#">Industry Solutions</a>
-                  </summary>
-                  <ul>
-                    <li class="menu_item submenu">
-                      <a href="#">E-Commerce</a>
-                    </li>
-                    <li class="menu_item submenu">
-                      <a href="#">Travel</a>
-                    </li>
-                    <li class="menu_item submenu">
-                      <a href="#">Retail</a>
-                    </li>
-                    <li class="menu_item submenu">
-                      <a href="#">Agencies</a>
-                    </li>
-                    <li class="menu_item submenu">
-                      <a href="#">Gaming</a>
-                    </li>
-                    <li class="menu_item submenu">
-                      <a href="#">Other Industries</a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li class="menu_item">
-                <a href="#">Pricing</a>
-              </li>
-              <li class="menu_item">
-                <a href="#">People</a>
-              </li>
-              <li class="menu_item">
-                <a href="#">Blog</a>
-              </li>
-              <li class="menu_item menu_login">
-                <a class="login" href="#">Log in</a>
-              </li>
-              <li class="menu_item menu_demo">
-                <a class="demo" href="#">Request Demo</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">People</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li class="menu_item menu_login">
+          <a class="login" href="#">Log in</a>
+        </li>
+        <li class="menu_item menu_demo">
+          <a class="demo" href="#">Request Demo</a>
+        </li>
+      </ul>
     </header>
 
     <!-- Adrien END ******************************-->
