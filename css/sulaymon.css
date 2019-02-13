@@ -9,8 +9,10 @@
 }
 .feature-box {
   text-align: center;
-  flex: 0 0 20%;
-  padding: 10px;
+  flex: 1 1 260px;
+  margin-bottom: 30px;
+  /* margin: 0 19px 43px; */
+  /* padding: 10px; */
   /* padding: 0 15px 20px 15px; */
 }
 
@@ -68,20 +70,24 @@
   padding-top: 200px;
   padding-bottom: 2.5rem;
   font-size: 3rem;
+  font-size: calc(1.5vw + 10px);
   color: white;
 }
 .quote i {
   font-size: 1.5rem;
+  font-size: calc(0.4vw + 8px);
 }
 .testimonial-box .main-bg .position {
   font-size: 2.3rem;
+  font-size: calc(1.5vw + 8px);
   color: #ffb601;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
   padding-bottom: 5rem;
 }
 .testimonial-box .main-bg .play-btn {
   font-size: 6rem;
+  font-size: calc(4vw + 10px);
   color: white;
 }
 
@@ -131,20 +137,13 @@
 
 .video-btn .company-name {
   padding-top: 2rem;
-  font-size: 2.5rem;
+  font-size: calc(1.5vw + 8px);
   font-weight: bold;
   color: #fff;
 }
 
 /* *** MEDIA QUERIES *** */
 @media all and (max-width: 900px) {
-  .feature-box {
-    flex: 0 0 50%;
-    padding-bottom: 3rem;
-  }
-  .feature-box {
-    padding: 20px;
-  }
   .testimonials .testimonial-box {
     width: 93%;
   }
@@ -154,17 +153,14 @@
   .testimonial-box .main-bg .quote {
     padding-top: 13rem;
     padding-bottom: 3rem;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
   .quote i {
     font-size: 0.7rem;
   }
   .testimonial-box .main-bg .position {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     padding-bottom: 3rem;
-  }
-  .testimonial-box .main-bg .play-btn {
-    font-size: 4rem;
   }
 
   .testimonials {
