@@ -4,12 +4,15 @@
 }
 .feature-boxes {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .feature-box {
   text-align: center;
-  flex: 0 0 20%;
+  flex: 1 1 260px;
+  margin-bottom: 30px;
+  /* margin: 0 19px 43px; */
+  /* padding: 10px; */
   /* padding: 0 15px 20px 15px; */
 }
 
@@ -33,47 +36,20 @@
 .testimonials {
   background: aquamarine;
   background-image: url(../asset/main-bg.webp);
-  height: 95vh;
+  height: 1080px;
   position: relative;
-}
-.testimonials .first-bg {
-  height: 85vh;
-  width: 100%;
-  background-color: red;
-  background: linear-gradient(
-    left bottom,
-    right top,
-    color-stop(0%, rgba(241, 231, 103, 1)),
-    color-stop(7%, rgba(252, 70, 188, 0.99)),
-    color-stop(100%, rgba(254, 182, 69, 0.81))
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    rgba(241, 231, 103, 1) 0%,
-    rgba(252, 70, 188, 0.99) 7%,
-    rgba(254, 182, 69, 0.81) 100%
-  );
-  background: transparent;
-  position: absolute;
-  bottom: 0;
-}
-
-.testimonials .second-bg {
-  height: 75vh;
-  width: 100%;
-  background-color: transparent;
-  position: absolute;
-  bottom: 50px;
 }
 
 .testimonials .testimonial-box {
-  /* background-color: green; */
-  height: 87vh;
+  height: 1010px;
   width: 70%;
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial-box .main-bg {
@@ -91,60 +67,83 @@
 }
 
 .testimonial-box .main-bg .quote {
-  padding-top: 15rem;
-  padding-bottom: 1.5rem;
+  padding-top: 200px;
+  padding-bottom: 2.5rem;
   font-size: 3rem;
+  font-size: calc(1.5vw + 10px);
   color: white;
 }
 .quote i {
   font-size: 1.5rem;
+  font-size: calc(0.4vw + 8px);
 }
 .testimonial-box .main-bg .position {
   font-size: 2.3rem;
+  font-size: calc(1.5vw + 8px);
   color: #ffb601;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 .testimonial-box .main-bg .play-btn {
   font-size: 6rem;
+  font-size: calc(4vw + 10px);
   color: white;
 }
 
 .testimonial-box .transparent-bg {
-  /* background: transparent; */
   height: 17%;
+  width: 48%;
   display: flex;
-  overflow: hidden;
   justify-content: space-around;
 }
 
 .video-btn {
   text-align: center;
-  margin-top: -70px;
+  margin-top: -60px;
+  position: relative;
 }
 .video-btn .video-image {
-  width: 100px;
-  height: 105px;
-}
-.video-btn .video-image img {
-  width: 100%;
-  height: 100%;
+  width: 116px;
+  height: 116px;
   border-radius: 50%;
+  display: relative;
 }
+.video-image::after {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  background: url(https://cdn2.hubspot.net/hubfs/1570479/Smartly%20Website%20Apr%202018/Home%20Page/play-btnslider.png?t=1529344446540)
+    0% 0% / 17px no-repeat;
+  background-repeat: no-repeat;
+}
+
+.video-1 {
+  background: url(../asset/bg-5.jpg) 50% 50% / cover no-repeat;
+}
+
+.video-2 {
+  background: linear-gradient(rgba(80, 11, 71, 0.7), rgba(80, 11, 71, 0.7)),
+    url(../asset/bg-6.png) 50% 50% / cover no-repeat;
+}
+
+.video-3 {
+  background: linear-gradient(rgba(80, 11, 71, 0.7), rgba(80, 11, 71, 0.7)),
+    url(../asset/bg-4.jpg) 50% 50% / cover no-repeat;
+}
+
 .video-btn .company-name {
-  padding-top: 3rem;
-  font-size: 2.5rem;
+  padding-top: 2rem;
+  font-size: calc(1.5vw + 8px);
   font-weight: bold;
+  color: #fff;
 }
 
 /* *** MEDIA QUERIES *** */
 @media all and (max-width: 900px) {
-  .feature-box {
-    flex: 0 0 50%;
-    padding-bottom: 3rem;
-  }
-
   .testimonials .testimonial-box {
     width: 93%;
   }
@@ -154,15 +153,27 @@
   .testimonial-box .main-bg .quote {
     padding-top: 13rem;
     padding-bottom: 3rem;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
   .quote i {
     font-size: 0.7rem;
   }
   .testimonial-box .main-bg .position {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    padding-bottom: 3rem;
   }
-  .testimonial-box .main-bg .play-btn {
-    font-size: 4rem;
+
+  .testimonials {
+    height: 720px;
+    margin-top: -5rem;
+  }
+  .testimonials .testimonial-box {
+    height: 650px;
+  }
+  .testimonial-box .transparent-bg {
+    width: 75%;
+  }
+  .video-image::after {
+    top: 28%;
   }
 }
