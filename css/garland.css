@@ -23,7 +23,6 @@
   flex-wrap: wrap;
   margin: -4%;
   justify-content: space-around;
-  min-width: 768px;
   width: 96%;
   margin: 2%;
 }
@@ -125,7 +124,7 @@
 
 .content2 {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: -2%;
   /* justify-content: space-around; */
   padding: 60px;
@@ -210,13 +209,11 @@ hr {
   margin-left: 140px;
 }
 .footer-content-area {
-  min-width: 1200px;
   padding-bottom: 60px;
   margin-left: 120px;
 }
 
 .footer-list-row {
-  min-width: 768px;
   width: 96%;
   margin: 2%;
 }
@@ -255,4 +252,10 @@ hr {
 .child-list li:hover {
   color: #21234d;
   cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .footer-content-area {
+    margin-left: 20px;
+  }
 }
