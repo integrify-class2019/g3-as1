@@ -53,3 +53,7 @@ h6 {
 main {
   padding-top: 65px;
 }
+
+footer {
+  overflow: hidden;
+}
