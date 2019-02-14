@@ -19,6 +19,9 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -171,7 +174,7 @@
 }
 /* ============= HOME BANNER =============== */
 .row_number1 {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 /* Banner */
 .home_banner {
@@ -180,7 +183,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: auto;
+  min-height: 100vh;
 }
 .banner_container {
   text-align: center;
@@ -222,10 +225,38 @@
 }
 .home_scroll {
   display: block;
-  margin-top: 66px;
+  margin-top: 100px;
 }
 .home_scroll i {
   color: #ffe34b;
   font-size: 36px;
   cursor: pointer;
+}
+/* ============ SECTION ROW NUMBER 2 ============ */
+.partners_logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 0;
+  max-width: 90%;
+}
+.partners_logo .fab {
+  font-size: 100px;
+  color: initial;
+}
+/* ========== SECTION ROW NUMBER 3 ============ */
+.row_number3 {
+  background: #f7f7f7;
+}
+.articles_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0 20px;
+}
+.articles_container img {
+  height: 25px;
+  margin: 20px 40px;
 }
