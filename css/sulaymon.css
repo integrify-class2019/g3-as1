@@ -179,6 +179,11 @@
     width: 75%;
   }
   .video-image::after {
-    top: 28%;
+    top: 15%;
+    left: 40%;
+  }
+  .video-btn .video-image {
+    width: 70px;
+    height: 70px;
   }
 }
