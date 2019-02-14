@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .footer-container {
   background-color: #f4f4f4;
   margin-top: 100px;
@@ -15,9 +20,12 @@
 .footer-content1 {
   /* padding-bottom: 40px; */
   display: flex;
-  flex-wrap: nowrap;
-  margin: -2%;
+  flex-wrap: wrap;
+  margin: -4%;
   justify-content: space-around;
+  min-width: 768px;
+  width: 96%;
+  margin: 2%;
 }
 
 .footer-image {
@@ -29,6 +37,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 150px;
 }
 
 .footer-content1 img {
@@ -40,14 +49,20 @@
 }
 
 .social-icon {
-  width: 62.666666%;
+  width: 64%;
   margin-top: 60px;
 }
+
+/* .social-list {
+  min-width: 768px;
+  width: 96%;
+  margin: 2%;
+} */
 
 .social-icon li {
   /* text-decoration: none; */
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 .social-icon li .fab {
@@ -57,8 +72,8 @@
 
 .circle {
   border-radius: 50%;
-  margin: 0.15em;
-  font-size: 3em;
+  margin: 0.1em;
+  font-size: 30px;
 }
 
 .fa-facebook-f {
@@ -102,4 +117,142 @@
   background: #21234d;
   color: white;
   padding: 0.2em 0.3em;
+}
+
+.fab:hover {
+  transform: scale(1.5);
+}
+
+.content2 {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: -2%;
+  /* justify-content: space-around; */
+  padding: 60px;
+}
+
+.content2-para1 {
+  width: 300px;
+  margin: 2%;
+}
+
+.content2-para1 h6 {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-family: "ProximaNovaSoft-Bold", proxima-soft, sans-serif;
+  font-weight: 700;
+  color: #21234d;
+  text-transform: uppercase;
+}
+
+.content2-para1 p {
+  font-size: 16px;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  color: rgba(33, 35, 77, 0.6);
+  margin-bottom: 0;
+}
+
+/* for the signup form */
+.signup {
+  display: flex;
+  margin-top: 15px;
+}
+
+input[type="submit"] {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 40px;
+  background: #7d408c;
+  color: #f4f4f4;
+}
+
+input[type="email"] {
+  background-color: #ffffff;
+  cursor: text;
+  padding: 5px;
+  border-width: 0px;
+  height: 40px;
+  color: black;
+  padding-right: 30px;
+}
+input::placeholder {
+  color: black;
+  text-align: center;
+  font-size: 1em;
+}
+
+input[type="submit"]:hover {
+  background-color: #21234d;
+  color: yellow;
+  cursor: pointer;
+}
+
+.content2-para1 .policy {
+  margin-top: 20px;
+  color: #c2c3cd;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  width: 78%;
+  margin-left: 140px;
+}
+.footer-content-area {
+  min-width: 1200px;
+  padding-bottom: 60px;
+  margin-left: 120px;
+}
+
+.footer-list-row {
+  min-width: 768px;
+  width: 96%;
+  margin: 2%;
+}
+
+.footer-subcontainer2 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer-subcontainer2 li {
+  text-decoration: none;
+  display: block;
+  min-width: 200px;
+  width: 20%;
+}
+
+.footer-subcontainer2 a {
+  font-size: 16px;
+  font-family: "ProximaNovaSoft-Bold", proxima-soft, sans-serif;
+  font-weight: 700;
+  display: block;
+  color: #21234d;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.children-list {
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 16px;
+  display: block;
+  padding: 0.2em 0;
+  color: rgba(33, 35, 77, 0.6);
+}
+
+.child-list li:hover {
+  color: #21234d;
+  cursor: pointer;
 }
