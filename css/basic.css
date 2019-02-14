@@ -39,6 +39,10 @@ h6 {
   font-family: 'ProximaNovaSoft-Bold';
 }
 
+img{
+  max-width:100%; 
+}
+
 /* *** GLOBAL STYLING *** */
 .container {
   max-width: 1180px;
@@ -54,6 +58,6 @@ main {
   padding-top: 65px;
 }
 
-footer {
+footer,.row_number3 {
   overflow: hidden;
 }
