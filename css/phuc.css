@@ -47,7 +47,7 @@ h3 span {
 
 .solution__item {
   margin: 0 39px 43px;
-  flex: 1 1 200px;
+  flex: 1 1 300px;
 }
 .solution__item h6 {
   font-size: 25px;
@@ -175,7 +175,20 @@ h3 span {
 
 /* PHuc Header Responsive **********************************************/
 
+
+.header .menu details summary a{
+  pointer-events: none;
+
+}
+
+summary{
+  outline:none;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 900px) {
+
+  
 
   .header {
     display: flex;
@@ -226,7 +239,7 @@ h3 span {
 details[open] .submenu {
    position: fixed;
    margin-left: -50px;
-   margin-top: 15px;
+   margin-top: 25px;
 }
 
 .header .menu details .submenu li a{
