@@ -34,15 +34,18 @@
 
 /* *** TESTIMONIAL *** */
 .testimonials {
-  background: aquamarine;
-  background-image: url(../asset/main-bg.webp);
-  height: 1080px;
+  background: url(../asset/main-bg.png);
+  background-position: 11% 105px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 960px;
   position: relative;
 }
 
 .testimonials .testimonial-box {
   height: 1010px;
-  width: 70%;
+  height: 856px;
+  width: 76.2%;
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -61,13 +64,14 @@
     url(../asset/bg-5.jpg);
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 83%;
   text-align: center;
   padding: 0 13rem;
 }
 
 .testimonial-box .main-bg .quote {
-  padding-top: 200px;
+  padding-top: 185px;
   padding-bottom: 2.5rem;
   font-size: 3rem;
   font-size: calc(1.5vw + 10px);
