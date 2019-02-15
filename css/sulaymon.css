@@ -1,6 +1,7 @@
 /* *** FEATURES *** */
 .features {
   padding: 3rem;
+  padding-top: 70px;
 }
 .feature-boxes {
   display: flex;
@@ -11,9 +12,6 @@
   text-align: center;
   flex: 1 1 260px;
   margin-bottom: 30px;
-  /* margin: 0 19px 43px; */
-  /* padding: 10px; */
-  /* padding: 0 15px 20px 15px; */
 }
 
 .feature-box .logo {
@@ -114,7 +112,7 @@
   display: relative;
 }
 .video-image::after {
-  content: '';
+  content: "";
   height: 20px;
   width: 20px;
   position: absolute;
@@ -157,13 +155,11 @@
   .testimonial-box .main-bg .quote {
     padding-top: 13rem;
     padding-bottom: 3rem;
-    /* font-size: 2.2rem; */
   }
   .quote i {
     font-size: 0.7rem;
   }
   .testimonial-box .main-bg .position {
-    /* font-size: 1.5rem; */
     padding-bottom: 3rem;
   }
 
@@ -177,7 +173,16 @@
   .testimonial-box .transparent-bg {
     width: 75%;
   }
+
+  .video-btn {
+    margin-top: -35px;
+  }
   .video-image::after {
-    top: 28%;
+    top: 15%;
+    left: 40%;
+  }
+  .video-btn .video-image {
+    width: 70px;
+    height: 70px;
   }
 }

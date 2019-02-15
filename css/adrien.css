@@ -3,6 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0")
+      format("embedded-opentype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0")
+      format("woff2"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0")
+      format("woff"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0")
+      format("truetype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
 
 /* ==================== HAMBURGER MENU MOBILE =========================== */
 .header {
@@ -11,6 +48,7 @@
   position: fixed;
   width: 100%;
   z-index: 3;
+  top: 0;
 }
 .header ul {
   margin: 0;
@@ -47,6 +85,7 @@
   max-height: 0;
   transition: max-height 0.2s ease-out;
   overflow-y: auto;
+  height: 100vh;
 }
 .header .menu details {
   margin-left: 20px;
@@ -57,6 +96,14 @@
   font-weight: 700;
   color: #21234d;
   padding-left: 0;
+}
+.submenu {
+  opacity: 1;
+  animation-name: fadeInRight;
+  animation-fill-mode: backwards;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  animation-delay: 0.4s;
 }
 .header .menu details .submenu li a {
   font-size: 18px;
@@ -69,7 +116,7 @@
   margin-left: -20px;
 }
 .login:before {
-  content: '\f023';
+  content: "\f023";
   margin-right: 11px;
   font-family: FontAwesome;
   font-size: 16px;
@@ -106,7 +153,7 @@
 .header .menu_icon .navicon:before,
 .header .menu_icon .navicon:after {
   background: #7d408c;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
@@ -127,7 +174,14 @@
   display: none;
 }
 .header .menu_btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 100vh;
+
+  opacity: 1;
+  animation-name: fadeInRight;
+  animation-fill-mode: backwards;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  animation-delay: 0.4s;
 }
 .header .menu_btn:checked ~ .menu_icon .navicon {
   background: transparent;
@@ -144,4 +198,122 @@
   top: 0;
   left: 0;
   right: 0;
+}
+/* ============= HOME BANNER =============== */
+.row_number1 {
+  /* padding-top: 50px; */
+}
+/* Banner */
+.home_banner {
+  background-image: linear-gradient(to right bottom, #8b3fa5ce, #8b4175e7),
+    url(../asset/home-banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 30vh;
+}
+.banner_container {
+  text-align: center;
+  padding: 50px 30px;
+}
+.banner_container h1 {
+  font-size: calc(3vw + 20px);
+  color: white;
+  line-height: 1.2;
+  letter-spacing: 1.3px;
+}
+.banner_container h1 span {
+  color: #ffe44c;
+  display: block;
+  font-weight: bold;
+}
+.banner_container h5 {
+  max-width: 650px;
+  margin: 20px auto 74px;
+  font-size: calc(2vw + 10px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.banner_container .white-btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 31px;
+  font-size: 18px;
+  padding: 18px 35px 18px;
+  background: #fff;
+  color: #252852;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+.banner_container .white-btn:hover {
+  background: transparent;
+  color: white;
+}
+.home_scroll {
+  display: block;
+  margin-top: 100px;
+}
+.home_scroll i {
+  color: #ffe34b;
+  font-size: 36px;
+  cursor: pointer;
+}
+/* ============ SECTION ROW NUMBER 2 ============ */
+.partners_logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 0;
+  max-width: 90%;
+}
+.partners_logo .fab {
+  font-size: 100px;
+  color: initial;
+}
+/* ========== SECTION ROW NUMBER 3 ============ */
+.row_number3 {
+  background: #f7f7f7;
+}
+.articles_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0 20px;
+}
+.articles_container img {
+  height: 25px;
+  margin: 20px 40px;
+}
+/* ============== STATIC VIEW HEADER NAVBAR ======== */
+@media (min-width: 900px) {
+  .login:hover:before {
+    content: "\f13e";
+    margin-right: 11px;
+    font-family: FontAwesome;
+    font-size: 16px;
+  }
+  .menu a:hover,
+  details:hover {
+    color: #cf8ab7;
+    transition: none;
+  }
+  .demo:hover {
+    border: 2px solid #cf8ab7;
+    border-width: 1px 1px 2px 1px;
+    border-radius: 30px;
+    line-height: 1em;
+    padding: 10px 20px 9px;
+  }
+  .header .menu details .submenu li a:hover,
+  .header .menu details:hover summary a {
+    color: #cf8ab7;
+  }
+  .home_banner {
+    padding-top: 20vh;
+  }
 }

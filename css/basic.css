@@ -13,8 +13,8 @@
 
 html {
   font-size: 12px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -26,9 +26,9 @@ a {
   text-decoration: none;
 }
 
-*:hover {
+/* *:hover {
   transition: all 1s ease;
-}
+} */
 
 h1,
 h2,
@@ -36,7 +36,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'ProximaNovaSoft-Bold';
+  font-family: "ProximaNovaSoft-Bold";
+}
+
+img {
+  max-width: 100%;
 }
 
 /* *** GLOBAL STYLING *** */
@@ -52,4 +56,9 @@ h6 {
 
 main {
   padding-top: 65px;
+}
+
+footer,
+.row_number3 {
+  overflow: hidden;
 }
