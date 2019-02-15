@@ -229,12 +229,32 @@ summary {
     margin: 0;
   }
 
+<<<<<<< HEAD
   /* Detail summary  */
   details[open] .submenu {
     position: fixed;
     margin-left: -50px;
     margin-top: 25px;
   }
+=======
+/* Detail summary  */
+details[open] .submenu {
+   position: fixed;
+   margin-left: -50px;
+   margin-top: 20px;
+}
+
+.header .menu details .submenu li a{
+  padding: 0;
+  margin:0;
+  font-size: 15px;
+  color: #21234d;
+}
+.header details  li {
+  padding: 15px 100px 15px 20px;
+  text-align: left;  
+}
+>>>>>>> phuc
 
   .header .menu details .submenu li a {
     padding: 0;
