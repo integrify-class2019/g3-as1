@@ -30,7 +30,7 @@ h3 span {
 }
 
 .solution__title h3 {
-  font-size: 40px;
+  font-size: calc(2vmax + 15px);
   line-height: 1.2;
 }
 
