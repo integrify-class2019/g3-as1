@@ -96,7 +96,7 @@ html {
   margin-left: -20px;
 }
 .login:before {
-  content: '\f023';
+  content: "\f023";
   margin-right: 11px;
   font-family: FontAwesome;
   font-size: 16px;
@@ -133,7 +133,7 @@ html {
 .header .menu_icon .navicon:before,
 .header .menu_icon .navicon:after {
   background: #7d408c;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
