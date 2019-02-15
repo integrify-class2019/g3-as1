@@ -96,7 +96,7 @@ html {
   margin-left: -20px;
 }
 .login:before {
-  content: '\f023';
+  content: "\f023";
   margin-right: 11px;
   font-family: FontAwesome;
   font-size: 16px;
@@ -133,7 +133,7 @@ html {
 .header .menu_icon .navicon:before,
 .header .menu_icon .navicon:after {
   background: #7d408c;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
@@ -259,4 +259,27 @@ html {
 .articles_container img {
   height: 25px;
   margin: 20px 40px;
+}
+/* ============== STATIC VIEW HEADER NAVBAR ======== */
+.menu a:hover,
+details:hover {
+  color: #cf8ab7;
+  transition: none;
+}
+.login:hover:before {
+  content: "\f13e";
+  margin-right: 11px;
+  font-family: FontAwesome;
+  font-size: 16px;
+}
+.demo:hover {
+  border: 2px solid #cf8ab7;
+  border-width: 1px 1px 2px 1px;
+  border-radius: 30px;
+  line-height: 1em;
+  padding: 10px 20px 9px;
+}
+.header .menu details .submenu li a:hover,
+.header .menu details summary a:hover {
+  color: #cf8ab7;
 }
