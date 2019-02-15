@@ -38,6 +38,7 @@ html {
   position: fixed;
   width: 100%;
   z-index: 3;
+  top:0;
 }
 .header ul {
   margin: 0;
@@ -72,7 +73,7 @@ html {
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: min-height 0.2s ease-out;
   overflow-y: auto;
 }
 .header .menu details {
@@ -154,7 +155,7 @@ html {
   display: none;
 }
 .header .menu_btn:checked ~ .menu {
-  max-height: 240px;
+  min-height: 100vh;
 }
 .header .menu_btn:checked ~ .menu_icon .navicon {
   background: transparent;
@@ -174,7 +175,7 @@ html {
 }
 /* ============= HOME BANNER =============== */
 .row_number1 {
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 /* Banner */
 .home_banner {
@@ -184,13 +185,14 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  padding-top: 30vh;
 }
 .banner_container {
   text-align: center;
   padding: 50px 30px;
 }
 .banner_container h1 {
-  font-size: 40px;
+  font-size: calc(3vw + 10px);
   color: white;
   line-height: 1.2;
   letter-spacing: 1.3px;
@@ -203,7 +205,7 @@ html {
 .banner_container h5 {
   max-width: 564px;
   margin: 20px auto 74px;
-  font-size: 24px;
+  font-size: calc(1.5vw + 10px);
   font-weight: 400;
   line-height: 1.2;
   color: #fff;
@@ -260,3 +262,12 @@ html {
   height: 25px;
   margin: 20px 40px;
 }
+
+
+@media only screen and (max-width: 900px) {
+  .home_banner{
+    padding-top: 20vh;
+  }
+
+}
+

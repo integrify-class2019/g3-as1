@@ -239,7 +239,7 @@ summary{
 details[open] .submenu {
    position: fixed;
    margin-left: -50px;
-   margin-top: 25px;
+   margin-top: 20px;
 }
 
 .header .menu details .submenu li a{
