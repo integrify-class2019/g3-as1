@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./asset/favicon.ico" type="image/x-icon" />
     <title>Group 3 Assignment 1</title>
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/adrien.css" />
@@ -20,310 +20,360 @@
   <body>
     <!--*********** Adrien START ******************************-->
 
-    <header>
-      <div class="header_container">
-        <div class="header_logo">
-          <a href="./index.html">
-            <img src="./asset/integrify-logo.png" alt="Company-Logo" />
-          </a>
-        </div>
-        <div class="navbar">
-          <input type="checkbox" />
-          <div class="menu-toggle">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-
-          <ul class="menu">
-            <li class="menu_item">
-              <a href="#">Product</a>
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <img src="./asset/integrify-logo.png" alt="Company-Logo" />
+      </a>
+      <input class="menu_btn" id="menu_btn" type="checkbox" />
+      <label class="menu_icon" for="menu_btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Customers</a>
+        </li>
+        <details>
+          <summary>
+            <a href="#">Industry Solutions</a>
+          </summary>
+          <ul class="submenu">
+            <li>
+              <a href="#">E-Commerce</a>
             </li>
-            <li class="menu_item">
-              <a href="#">Customers</a>
+            <li>
+              <a href="#">Travel</a>
             </li>
-            <details>
-              <summary>
-                <a href="#">Industry Solutions</a>
-              </summary>
-              <ul>
-                <li class="menu_item submenu">
-                  <a href="#">E-Commerce</a>
-                </li>
-                <li class="menu_item submenu">
-                  <a href="#">Travel</a>
-                </li>
-                <li class="menu_item submenu">
-                  <a href="#">Retail</a>
-                </li>
-                <li class="menu_item submenu">
-                  <a href="#">Agencies</a>
-                </li>
-                <li class="menu_item submenu">
-                  <a href="#">Gaming</a>
-                </li>
-                <li class="menu_item submenu">
-                  <a href="#">Other Industries</a>
-                </li>
-              </ul>
-            </details>
-            <li class="menu_item">
-              <a href="#">Pricing</a>
+            <li>
+              <a href="#">Retail</a>
             </li>
-            <li class="menu_item">
-              <a href="#">People</a>
+            <li>
+              <a href="#">Agencies</a>
             </li>
-            <li class="menu_item">
-              <a href="#">Blog</a>
+            <li>
+              <a href="#">Gaming</a>
             </li>
-            <li class="menu_item">
-              <a class="menu_login" href="#">Log in</a>
-            </li>
-            <li class="menu_item">
-              <a class="menu_demo" href="#">Request Demo</a>
+            <li>
+              <a href="#">Other Industries</a>
             </li>
           </ul>
-        </div>
-      </div>
+        </details>
+
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">People</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li class="menu_item menu_login">
+          <a class="login" href="#">Log in</a>
+        </li>
+        <li class="menu_item menu_demo">
+          <a class="demo" href="#">Request Demo</a>
+        </li>
+      </ul>
     </header>
-
-    <!-- Adrien END ******************************-->
-
-    <!-- Sulaymon START******************************-->
-
-    <!--*** Features Start ***-->
-    <section class="row features">
-      <div class="feature-boxes container">
-        <div class="feature-box box-1">
-          <div class="logo"><i class="fas fa-dollar-sign"></i></div>
-          <div class="title"><h6>Saving Tax Payer money</h6></div>
-          <div class="description">
-            <p>
-              We are -Lorem dolor sit, itt jwwas
-            </p>
-          </div>
-        </div>
-        <div class="feature-box box-2">
-          <div class="logo"><i class="fas fa-weight"></i></div>
-          <div class="title"><h6>Measurable Immigrants Success</h6></div>
-          <div class="description">
-            <p>
-              Irem a man amet, consectetur adip
-            </p>
-          </div>
-        </div>
-        <div class="feature-box box-3">
-          <div class="logo"><i class="fas fa-compress"></i></div>
-          <div class="title"><h6>Integration Through Technology</h6></div>
-          <div class="description">
-            <p>
-              psum sit amet consectetur adipisicin.
-            </p>
-          </div>
-        </div>
-        <div class="feature-box box-4">
-          <div class="logo"><i class="fas fa-shopping-cart"></i></div>
-          <div class="title"><h6>Create Jobs and Services</h6></div>
-          <div class="description">
-            <p>Lore sit amet cons ectdipisicing.</p>
-          </div>
-        </div>
-        <div class="feature-box box-5">
-          <div class="logo"><i class="fas fa-fast-forward"></i></div>
-          <div class="title"><h6>Integrate Immigrants faster</h6></div>
-          <div class="description">
-            <p>Ayuis ipsum sit amet cotetur lit.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--*** Features End ***-->
-
-    <!--*** Testimonial Start ***-->
-    <section class="row testimonials">
-      <div class="first-bg"></div>
-      <div class="second-bg"></div>
-      <div class="testimonial-box">
-        <div class="main-bg">
-          <div class="quote">
-            <sup><i class="fas fa-quote-left"></i></sup> The Speed at which
-            Projects and learning are completed is highly Satisfying. Go Join
-            Integrify Today <sup><i class="fas fa-quote-right"></i></sup>
-          </div>
-          <div class="position">
-            John Doe, Chief Executive Officer, MiniCode Group of Companies Oy.
-          </div>
-          <div class="play-btn"><i class="far fa-play-circle"></i></div>
-        </div>
-        <div class="transparent-bg">
-          <div class="video-btn">
-            <div class="video-image video-1"></div>
-            <div class="company-name">Druid</div>
-          </div>
-          <div class="video-btn">
-            <div class="video-image video-2"></div>
-            <div class="company-name">Digia</div>
-          </div>
-          <div class="video-btn">
-            <div class="video-image video-3"></div>
-            <div class="company-name">Helsinki</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--*** Testimonial End ***-->
-
-    <!-- Sulaymon End******************************-->
-
-    <!-- Phuc START ******************************-->
-
-    <section class="row solution">
-      <div class="container solution__container">
-        <div class="solution__title">
-          <h3>Integrify Tech Talent <span>Boosts Business</span></h3>
-        </div>
-        <div class="solution__content">
-          <div class="solution__item">
-            <a href="" class="solution__link">
-              <div class="solution__icon">
-                <i class="fas fa-blender-phone"></i>
-              </div>
-              <div class="solution__text">
-                <h6>skilled ICT</h6>
-              </div>
-            </a>
-          </div>
-          <div class="solution__item">
-            <a href="" class="solution__link">
-              <div class="solution__icon">
-                <i class="far fa-file-code"></i>
-              </div>
-              <div class="solution__text">
-                <h6>
-                  latest coding<br />
-                  technologies
-                </h6>
-              </div>
-            </a>
-          </div>
-          <div class="solution__item">
-            <a href="" class="solution__link">
-              <div class="solution__icon">
-                <i class="far fa-smile-beam"></i>
-              </div>
-              <div class="solution__text">
-                <h6>highly-motivated newcomers</h6>
-              </div>
-            </a>
-          </div>
-          <div class="solution__item">
-            <a href="" class="solution__link">
-              <div class="solution__icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <div class="solution__text">
-                <h6>digital skills</h6>
-              </div>
-            </a>
-          </div>
-          <div class="solution__item">
-            <a href="" class="solution__link">
-              <div class="solution__icon">
-                <i class="fas fa-chalkboard-teacher"></i>
-              </div>
-              <div class="solution__text">
-                <h6>Tech Talent</h6>
-              </div>
-            </a>
-          </div>
-          <div class="solution__item">
-            <a href="" class="solution__link">
-              <div class="solution__icon">
-                <i class="fas fa-globe-europe"></i>
-              </div>
-              <div class="solution__text">
-                <h6>global corporate</h6>
-              </div>
+    <main>
+      <section class="row_number1">
+        <div class="home_banner">
+          <div class="banner_container">
+            <h1>
+              <span>We Develop Code(rs)</span>
+              How does Integrify work?
+            </h1>
+            <h5>
+              We teach talented immigrants software development and connect them
+              with work.
+            </h5>
+            <a href="#" class="white-btn">Request a Demo</a>
+            <a href="#features" class="home_scroll">
+              <i class="fas fa-chevron-down" aria-hidden="true"></i>
             </a>
           </div>
         </div>
-        <div class="solution__button">
-          <a href="" class="button button--purple">read more</a>
+      </section>
+      <section class="row_number2">
+        <div class="partners_logo">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js-square"></i>
         </div>
-      </div>
-    </section>
-    <section class="row partner">
-      <div class="container partner__container">
-        <div class="partner__content partner1">
-          <div class="partner__wrap">
-            <div class="partner__title"><h4>Partner1</h4></div>
-            <div class="partner__text">
+      </section>
+      <section class="row_number3">
+        <div class="articles_container">
+          <a href="#">
+            <img src="./asset/yle-logo.png" alt="yle" />
+          </a>
+          <a href="#">
+            <img src="./asset/talous-logo.png" alt="talous" />
+          </a>
+          <a href="#">
+            <img src="./asset/kauppa-logo.png" alt="kauppa" />
+          </a>
+          <a href="#">
+            <img src="./asset/sanomat-logo.png" alt="sanomat" />
+          </a>
+          <a href="#">
+            <img src="./asset/bloomberg-logo.png" alt="bloomberg" />
+          </a>
+          <a href="#">
+            <img src="./asset/fortune-logo.png" alt="fortune" />
+          </a>
+          <a href="#">
+            <img src="./asset/guardian-logo.png" alt="guardian" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Adrien END ******************************-->
+
+      <!-- Sulaymon START******************************-->
+
+      <!--*** Features Start ***-->
+      <section class="row features" id="features">
+        <div class="feature-boxes container-lg">
+          <div class="feature-box box-1">
+            <div class="logo"><i class="fas fa-dollar-sign"></i></div>
+            <div class="title">
+              <h6>Saving Tax Payer money</h6>
+            </div>
+            <div class="description">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Ratione repellat eaque qui quidem ipsam soluta.
+                We are -Lorem dolor sit, itt jwwas lorem are ljuf
               </p>
             </div>
-            <div class="partner__button">
-              <a href="" class="button button--white">Partner 1 Button</a>
-            </div>
           </div>
-        </div>
-        <div class="partner__content partner2">
-          <div class="partner__wrap">
-            <div class="partner__title"><h4>Partner 2</h4></div>
-            <div class="partner__text">
+          <div class="feature-box box-2">
+            <div class="logo"><i class="fas fa-weight"></i></div>
+            <div class="title"><h6>Measurable Immigrants Success</h6></div>
+            <div class="description">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Ratione repellat eaque qui quidem ipsam soluta.
+                Irem a man amet, consectetur adip
               </p>
             </div>
-            <div class="partner__button">
-              <a href="" class="button button--white">Partner 2 Button</a>
-            </div>
           </div>
-        </div>
-        <div class="partner__content partner3 ">
-          <div class="partner__wrap">
-            <div class="partner__title"><h4>Partner1</h4></div>
-            <div class="partner__text">
+          <div class="feature-box box-3">
+            <div class="logo"><i class="fas fa-compress"></i></div>
+            <div class="title"><h6>Integration with Technology</h6></div>
+            <div class="description">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Ratione repellat eaque qui quidem ipsam soluta.
+                psum sit amet consectetur adipisicin.
               </p>
             </div>
-            <div class="partner__button">
-              <a href="" class="button button--white">Partner 3 Button</a>
+          </div>
+          <div class="feature-box box-4">
+            <div class="logo"><i class="fas fa-shopping-cart"></i></div>
+            <div class="title">
+              <h6>Immigirant Entrepreneurs</h6>
+            </div>
+            <div class="description">
+              <p>Lore sit amc tdipisicing. consectetur adipic</p>
+            </div>
+          </div>
+          <div class="feature-box box-5">
+            <div class="logo"><i class="fas fa-fast-forward"></i></div>
+            <div class="title"><h6>Integrate Immigrants faster</h6></div>
+            <div class="description">
+              <p>Ayuis ipsum sit amet consectetur adipisic cote.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="row learn">
-      <div class="container learn__container">
-        <div class="learn__icon"><i class="fas fa-chalkboard-teacher"></i></div>
-        <div class="learn__title">
-          <h3><span>Learn more about</span> our Integrify acedemy</h3>
-        </div>
-        <div class="learn__text">
-          <p>Lorem ipsum dolordolor dolordolor dolor, s odio consectetur.</p>
-        </div>
-        <div class="learn__button">
-          <a href="" class="button button--purple">Read more</a>
-        </div>
-      </div>
-    </section>
+      </section>
+      <!--*** Features End ***-->
 
+      <!--*** Testimonial Start ***-->
+      <section class="row testimonials">
+        <div class="testimonial-box">
+          <div class="main-bg">
+            <div class="quote">
+              <sup><i class="fas fa-quote-left"></i></sup> The Speed at which
+              Projects and learning are completed is highly Satisfying. Go Join
+              Integrify Today <sup><i class="fas fa-quote-right"></i></sup>
+            </div>
+            <div class="position">
+              John Doe, Chief Executive Officer, MiniCode Group of Companies Oy.
+            </div>
+            <div class="play-btn"><i class="far fa-play-circle"></i></div>
+          </div>
+          <div class="transparent-bg">
+            <div class="video-btn">
+              <div class="video-image video-1"></div>
+              <div class="company-name">Druid</div>
+            </div>
+            <div class="video-btn">
+              <div class="video-image video-2"></div>
+              <div class="company-name">Digia</div>
+            </div>
+            <div class="video-btn">
+              <div class="video-image video-3"></div>
+              <div class="company-name">Helsinki</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--*** Testimonial End ***-->
+
+      <!-- Sulaymon End******************************-->
+
+      <!-- Phuc START ******************************-->
+
+      <section class="row solution">
+        <div class="container solution__container">
+          <div class="solution__title">
+            <h3>Integrify Tech Talent <span>Boosts Business</span></h3>
+          </div>
+          <div class="solution__content">
+            <div class="solution__item">
+              <a href="" class="solution__link">
+                <div class="solution__icon">
+                  <i class="fas fa-blender-phone"></i>
+                </div>
+                <div class="solution__text">
+                  <h6>skilled ICT</h6>
+                </div>
+              </a>
+            </div>
+            <div class="solution__item">
+              <a href="" class="solution__link">
+                <div class="solution__icon">
+                  <i class="far fa-file-code"></i>
+                </div>
+                <div class="solution__text">
+                  <h6>
+                    latest coding<br />
+                    technologies
+                  </h6>
+                </div>
+              </a>
+            </div>
+            <div class="solution__item">
+              <a href="" class="solution__link">
+                <div class="solution__icon">
+                  <i class="far fa-smile-beam"></i>
+                </div>
+                <div class="solution__text">
+                  <h6>highly-motivated newcomers</h6>
+                </div>
+              </a>
+            </div>
+            <div class="solution__item">
+              <a href="" class="solution__link">
+                <div class="solution__icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="solution__text">
+                  <h6>digital skills</h6>
+                </div>
+              </a>
+            </div>
+            <div class="solution__item">
+              <a href="" class="solution__link">
+                <div class="solution__icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="solution__text">
+                  <h6>Tech Talent</h6>
+                </div>
+              </a>
+            </div>
+            <div class="solution__item">
+              <a href="" class="solution__link">
+                <div class="solution__icon">
+                  <i class="fas fa-globe-europe"></i>
+                </div>
+                <div class="solution__text">
+                  <h6>global corporate</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="solution__button">
+            <a href="" class="button button--purple">read more</a>
+          </div>
+        </div>
+      </section>
+      <section class="row partner">
+        <div class="container partner__container">
+          <div class="partner__content partner1">
+            <div class="partner__wrap">
+              <div class="partner__title"><h4>Partner1</h4></div>
+              <div class="partner__text">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ratione repellat eaque qui quidem ipsam soluta.
+                </p>
+              </div>
+              <div class="partner__button">
+                <a href="" class="button button--white">Partner 1 Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="partner__content partner2">
+            <div class="partner__wrap">
+              <div class="partner__title"><h4>Partner 2</h4></div>
+              <div class="partner__text">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ratione repellat eaque qui quidem ipsam soluta.
+                </p>
+              </div>
+              <div class="partner__button">
+                <a href="" class="button button--white">Partner 2 Button</a>
+              </div>
+            </div>
+          </div>
+          <div class="partner__content partner3 ">
+            <div class="partner__wrap">
+              <div class="partner__title"><h4>Partner1</h4></div>
+              <div class="partner__text">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ratione repellat eaque qui quidem ipsam soluta.
+                </p>
+              </div>
+              <div class="partner__button">
+                <a href="" class="button button--white">Partner 3 Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="row learn">
+        <div class="container learn__container">
+          <div class="learn__icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <div class="learn__title">
+            <h3><span>Learn more about</span> our Integrify Academy</h3>
+          </div>
+          <div class="learn__text">
+            <p>Lorem ipsum dolordolor dolordolor dolor, s odio consectetur.</p>
+          </div>
+          <div class="learn__button">
+            <a href="" class="button button--purple">Read more</a>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Phuc END -->
     <footer>
       <!-- Garland START   ******************************-->
+      <!--*************FOOTER-bg-color*****************-->
       <div class="footer-container">
+        <!--*************FOOTER-partition1*****************-->
         <div class="footer-subcontainer">
+          <!--*************FOOTER-logo & icon*****************-->
           <div class="footer-content1">
             <div class="footer-image">
-              <img src="asset/group.jpg" alt="footer-img" />
+              <img src="asset/integrify-logo.png" alt="footer-img" />
             </div>
             <div class="social-icon">
-              <ul>
+              <ul class="social-list">
                 <li>
                   <i class="fab fa-facebook-f circle"></i>
                 </li>
@@ -346,6 +396,7 @@
               </ul>
             </div>
           </div>
+          <!--*************FOOTER-ad-text*****************-->
           <div class="content2">
             <div class="content2-para1">
               <h6>Online Advertising</h6>
@@ -355,15 +406,64 @@
                 injected humour, or randomised words which don't look even
                 slightly believable.
               </p>
+              <p class="policy">Privacy Policy & Cookie Policy</p>
             </div>
-            <div class="content2-para2">
-              <h6>Online Advertising</h6>
+            <div class="content2-para1">
+              <h6>Stay in loop</h6>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable.
+                Subscribe to receive biweekly tips on creative automation and
+                digital advertising!
               </p>
+              <div class="signup">
+                <input
+                  type="email"
+                  id="email"
+                  class="email-id"
+                  name="email"
+                  placeholder="What is your Email ?"
+                  required
+                />
+
+                <input type="submit" class="email-btn" value="Subscribe" />
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <!--*************FOOTER-partition2*****************-->
+        <div class="footer-content-area">
+          <div class="footer-subcontainer2">
+            <!--*************FOOTER-business-category*****************-->
+            <div class="footer-list-row">
+              <ul class="bussiness-category">
+                <li class="parent-list">
+                  <a>Resources</a>
+                  <ul class="child-list">
+                    <li class="children-list">Success Stories</li>
+                    <li class="children-list">Ebooks & Reports</li>
+                    <li class="children-list">Events</li>
+                    <li class="children-list">Webinars</li>
+                  </ul>
+                </li>
+                <li class="parent-list">
+                  <a>about us</a>
+                  <ul class="child-list">
+                    <li class="children-list">Careers</li>
+                    <li class="children-list">In the News</li>
+                    <li class="children-list">Find Us</li>
+                    <li class="children-list">Support</li>
+                  </ul>
+                </li>
+                <li class="parent-list">
+                  <a>Services</a>
+                  <ul class="child-list">
+                    <li class="children-list">Saas</li>
+                    <li class="children-list">Managed services</li>
+                    <li class="children-list">Agency Partner Program</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

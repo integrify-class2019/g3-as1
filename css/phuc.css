@@ -30,7 +30,7 @@ h3 span {
 }
 
 .solution__title h3 {
-  font-size: 40px;
+  font-size: calc(2vmax + 15px);
   line-height: 1.2;
 }
 
@@ -47,7 +47,7 @@ h3 span {
 
 .solution__item {
   margin: 0 39px 43px;
-  flex: 1 1 200px;
+  flex: 1 1 300px;
 }
 .solution__item h6 {
   font-size: 25px;
@@ -129,7 +129,7 @@ h3 span {
       rgba(24, 21, 21, 0.6) 0,
       rgba(24, 21, 21, 0.6) 80%
     ),
-    url(../asset/integrify\ in\ medium.jpg);
+    url(../asset/integrifyinmedium.jpg);
   background-position: center top;
 }
 
@@ -171,4 +171,79 @@ h3 span {
 
 .learn__button .button {
   margin-top: 20px;
+}
+
+/* PHuc Header Responsive **********************************************/
+
+.header .menu details summary a {
+  pointer-events: none;
+}
+
+summary {
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header .menu_icon {
+    display: none;
+  }
+  .header .menu {
+    max-height: 65px;
+    flex: 1 0 750px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header .logo {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .header .menu > * {
+    flex: 0 1 80px;
+  }
+
+  .header .menu_demo,
+  .header .menu details {
+    flex: 0 0 150px;
+    padding-top: 6px;
+  }
+
+  .header li a,
+  .header .menu details summary a {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .header li {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Detail summary  */
+  details[open] .submenu {
+    position: fixed;
+    margin-left: -50px;
+    margin-top: 22px;
+  }
+
+  .header .menu details .submenu li a {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    /* color: #21234d; */
+  }
+  .header details li {
+    padding: 15px 100px 15px 20px;
+    text-align: left;
+  }
 }
