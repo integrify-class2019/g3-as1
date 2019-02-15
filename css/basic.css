@@ -26,9 +26,9 @@ a {
   text-decoration: none;
 }
 
-/* *:hover {
+*:hover {
   transition: all 1s ease;
-} */
+}
 
 h1,
 h2,

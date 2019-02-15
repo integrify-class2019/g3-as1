@@ -308,6 +308,7 @@ html {
     border-radius: 30px;
     line-height: 1em;
     padding: 10px 20px 9px;
+    transition: all 1s ease;
   }
   .header .menu details .submenu li a:hover,
   .header .menu details:hover summary a {
